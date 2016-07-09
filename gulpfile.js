@@ -1,26 +1,13 @@
-var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    minifyCSS = require('gulp-cssnano'),
-    renameFiles = require('gulp-rename'),
-    autoprefixer = require('gulp-autoprefixer');
-//debug = require('gulp-debug');
+var gulp = require('gulp');
+var sass = require('gulp-sass');
 
-//Main Sass task
-gulp.task('sass', function() {
-    gulp.src('public/sass/*.scss', {base: '.'})
+gulp.task('styles', function() {
+    gulp.src('public/sass/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions', 'Safari >= 8'],
-            cascade: false
-        }))
-        //.pipe(renameFiles({
-        //  suffix: '.min'
-        //}))
-        //.pipe(debug())
-        //.pipe(minifyCSS())
-        .pipe(gulp.dest('.'));
+        .pipe(gulp.dest('public/css/'))
 });
 
-gulp.task('default', ['sass'], function() {
-    gulp.watch('public/sass/*.scss', ['sass']);
+//Watch task
+gulp.task('default',function() {
+    gulp.watch('public/sass/*.scss',['styles']);
 });

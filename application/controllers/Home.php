@@ -6,7 +6,6 @@ class Home extends CI_Controller {
     public function index()
     {
         echo getPublicUrl();
-        return;
         $this->load->view('home/home-view');
     }
 }

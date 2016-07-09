@@ -8,5 +8,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * Time: 22:57
  */
 function getPublicUrl(){
-    return base_url().'public';
+    return '/public/';
 }
