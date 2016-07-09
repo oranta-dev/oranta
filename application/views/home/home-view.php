@@ -12,15 +12,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <header>
             <div class="logo"></div>
             <div class="info"></div>
+            <div class="nzok"></div>
         </header> <!--emd header-->
         <nav>
             <ul class="nav-bar">
-                <li class="nav-menu">НАШИЯТ ЕКИП</li>
-                <li class="nav-menu">РАБОТНО ВРЕМЕ</li>
-                <li class="nav-menu">УСЛУГИ</li>
-                <li class="nav-menu">ЦЕНОРАЗПИС</li>
-                <li class="nav-menu"></li>
-                <li class="nav-menu"></li>
+                <li class="nav-menu"><a href="">НАШИЯТ ЕКИП</a></li>
+                <li class="nav-menu"><a href="">РАБОТНО ВРЕМЕ</a></li>
+                <li class="nav-menu"><a href="">УСЛУГИ</a></li>
+                <li class="nav-menu"><a href="">ЦЕНОРАЗПИС</a></li>
+                <li class="nav-menu"><a href="">КОНТАКТИ</a></li>
+                <li class="nav-menu"><a href="">НОВИНИ</a></li>
             </ul>
         </nav>
         <div class="content">
