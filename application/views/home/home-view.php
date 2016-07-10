@@ -6,6 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
     <meta charset="UTF-8">
     <title>АГПСМП по кардиология Оранта ООД</title>
+    <style rel="stylesheet" href=" <?php echo getPublicUrl();?>css/reset.css"></style>
 </head>
 <body>
     <div class="container">
